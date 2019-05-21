@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Revoult API</title>
+    <style>
+    .li-api {
+        padding: 0.5rem;
+    }
+    </style>
+</head>
+<body>
+<h2>Sergey Luchko Revoult Assigment:</h2>
+<h2>API calls available:</h2>
+<ul>
+    <li class="li-api">
+        Get list of all accounts
+        <br>
+        <a href="/api/listAccounts">/api/listAccounts</a>
+    </li>
+    <li class="li-api">
+        Get account by id : /api/account?id=[account id]
+        <br>
+        <a href="/api/account?id=1">/api/account?id=1</a>
+    </li>
+    <li class="li-api">
+        Create account : /api/createAccount?name=[account name]&balance=[initial balance]
+        <br>
+        <a href="/api/createAccount?name=Max&balance=1000">/api/createAccount?name=Max&balance=1000</a>
+    </li>
+    <li class="li-api">
+        Transfer money from one account to another : /api/transfer?fromId=[orderer id]&toId=[counter-party id]&amount=[amount to be transfered]
+        <br>
+        <a href="/api/transfer?fromId=4&toId=1&amount=300">/api/transfer?fromId=4&toId=1&amount=300</a>
+    </li>
+</ul>
+
+</body>
+</html>
